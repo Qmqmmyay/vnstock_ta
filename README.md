@@ -5,7 +5,9 @@ A Python package for Vietnamese market data analysis.
 ## Installation
 
 ```bash
-pip install vnstock_ta
+git clone https://github.com/Qmqmmyay/vnstock_ta.git
+cd vnstock_ta
+pip install -e .
 ```
 
 ## Usage
@@ -13,4 +15,3 @@ pip install vnstock_ta
 ```python
 import vnstock_ta
 ```
-
