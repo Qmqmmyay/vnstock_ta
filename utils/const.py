@@ -1,0 +1,193 @@
+import pathlib
+
+_EMERALD_GREEN = "#53B987"
+_CRIMSON_RED = "#EB4D5C"
+_ISLAND_GREEN = "#2BAE66FF"
+_TURKISH_SEA = "#195190FF"
+_ORANGE = "#F2AA4CFF"
+_LIME_PUNCH = "#D6ED17FF"
+_SLATE_BLUE = "#6A7793"
+_GRADIENT_EMERALD = ["#53B987", "#FFFFFF"]
+
+# Positive Outlook - Complete Palette
+POSITIVE_OUTLOOK_COMPLETE = {
+    "ILLUMINATING": "#F4DF4EFF",
+    "MINT": "#ADEFD1FF",
+    "LIME_PUNCH": "#D6ED17FF",
+    "PEACH": "#EEA47FFF",
+    "BLAZING_YELLOW": "#FEE715FF",
+    "SKY_BLUE": "#89ABE3FF",
+    "ROYAL_BLUE": "#00539CFF",
+    "ELECTRIC_BLUE_LEMONADE": "#0063B2FF",
+    "AQUAMARINE": "#9CC3D5FF",
+    "ISLAND_GREEN": "#2BAE66FF",
+    "LIGHT_PURPLE": "#D7A9E3FF",
+    "LIGHT_BLUE": "#8BBEE8FF",
+    "LIGHT_GREEN": "#A8D5BAFF"
+}
+
+# Negative Sentiment - Complete Palette
+NEGATIVE_SENTIMENT_COMPLETE = {
+    "BLACK": "#101820FF",
+    "ULTIMATE_GRAY": "#949398FF",
+    "SILVER": "#A2A2A1FF",
+    "FOREST_GREEN": "#2C5F2D",
+    "ORANGE": "#F2AA4CFF",
+    "GRAY": "#606060FF",
+    "ROYAL_BLUE": "#00539CFF",
+    "PEACH": "#EEA47FFF",
+    "SKY_BLUE": "#89ABE3FF",
+    "LIME_PUNCH": "#D6ED17FF",
+    "RED": "#F65058FF",
+    "NAVY": "#28334AFF",
+    "DARK_GREEN": "#006B38FF"
+}
+
+# Neutral Information - Complete Palette
+NEUTRAL_INFORMATION_COMPLETE = {
+    "SILVER": "#A2A2A1FF",
+    "WHITE": "#FCF6F5FF",
+    "GRAY": "#606060FF",
+    "MOSS_GREEN": "#97BC62FF",
+    "TURKISH_SEA": "#195190FF",
+    "AQUAMARINE": "#9CC3D5FF",
+    "ISLAND_GREEN": "#2BAE66FF",
+    "BLACK": "#101820FF",
+    "ULTIMATE_GRAY": "#949398FF",
+    "PEACH": "#EEA47FFF",
+    "LIGHT_PURPLE": "#D7A9E3FF",
+    "LIGHT_BLUE": "#8BBEE8FF",
+    "LIGHT_GREEN": "#A8D5BAFF"
+}
+
+# Positive Outlook - Single Hue (Yellow)
+POSITIVE_OUTLOOK_SINGLE_HUE = {
+    "YELLOW_1": "#FFF9C4",
+    "YELLOW_2": "#FFF176",
+    "YELLOW_3": "#FFEB3B",
+    "YELLOW_4": "#FDD835",
+    "YELLOW_5": "#FBC02D",
+    "YELLOW_6": "#F9A825",
+    "YELLOW_7": "#F57F17",
+    "YELLOW_8": "#FFEA00"
+}
+
+# Negative Sentiment - Single Hue (Gray)
+NEGATIVE_SENTIMENT_SINGLE_HUE = {
+    "GRAY_1": "#FAFAFA",
+    "GRAY_2": "#F5F5F5",
+    "GRAY_3": "#EEEEEE",
+    "GRAY_4": "#E0E0E0",
+    "GRAY_5": "#BDBDBD",
+    "GRAY_6": "#9E9E9E",
+    "GRAY_7": "#757575",
+    "GRAY_8": "#616161"
+}
+
+# Neutral Information - Single Hue (Blue)
+NEUTRAL_INFORMATION_SINGLE_HUE = {
+    "BLUE_1": "#E3F2FD",
+    "BLUE_2": "#BBDEFB",
+    "BLUE_3": "#90CAF9",
+    "BLUE_4": "#64B5F6",
+    "BLUE_5": "#42A5F5",
+    "BLUE_6": "#2196F3",
+    "BLUE_7": "#1E88E5",
+    "BLUE_8": "#1976D2"
+}
+
+# Positive Outlook - Divergent Scale (Green to Yellow)
+POSITIVE_OUTLOOK_DIVERGENT = {
+    "GREEN_1": "#005C3F",
+    "GREEN_2": "#206B3B",
+    "GREEN_3": "#3D7A33",
+    "GREEN_4": "#5C8727",
+    "GREEN_5": "#7F9315",
+    "YELLOW_1": "#A69C00",
+    "YELLOW_2": "#D1A300",
+    "YELLOW_3": "#FFA600"
+}
+
+# Negative Sentiment - Divergent Scale (Red to Black)
+NEGATIVE_SENTIMENT_DIVERGENT = {
+    "RED_1": "#FFCDD2",
+    "RED_2": "#EF9A9A",
+    "RED_3": "#E57373",
+    "RED_4": "#EF5350",
+    "RED_5": "#F44336",
+    "BLACK_1": "#424242",
+    "BLACK_2": "#212121",
+    "BLACK_3": "#000000"
+}
+
+# Neutral Information - Divergent Scale (Blue to Gray)
+NEUTRAL_INFORMATION_DIVERGENT = {
+    "BLUE_1": "#E3F2FD",
+    "BLUE_2": "#BBDEFB",
+    "BLUE_3": "#90CAF9",
+    "BLUE_4": "#64B5F6",
+    "BLUE_5": "#42A5F5",
+    "GRAY_1": "#E0E0E0",
+    "GRAY_2": "#BDBDBD",
+    "GRAY_3": "#9E9E9E"
+}
+
+# Dark Mode Primary Colors
+DARK_MODE_PRIMARY_COLORS = {
+    "BALANCED_BLUE": "#37745B",
+    "HARMONY_ORANGE": "#FC4F30",
+    "INSIGHT_SKY": "#30A2DA",
+    "OPTIMISTIC_GOLD": "#E5AE38",
+    "VITAL_GREEN": "#6D904F",
+    "CREATIVE_ORANGE": "#DA6A00",
+    "SOPHISTICATED_SLATE": "#6A7793",
+    "ELEGANT_GRAY": "#CFD1E0",
+    "MODERN_TEAL": "#217074",
+    "DEPENDABLE_STEEL": "#8B8B8B"
+}
+
+# Dark Mode Secondary Colors
+DARK_MODE_SECONDARY_COLORS = {
+    "APPROACHABLE_BEIGE": "#EDC5AB",
+    "PEACEFUL_MAUVE": "#D0C9D0",
+    "RELIABLE_GREEN": "#14471E",
+    "ENERGETIC_GOLD": "#EE9B01",
+    "NURTURING_ROSE": "#B4A8AA",
+    "INNOVATIVE_TEAL": "#217074",
+    "GROWTH_MOSS": "#68904D",
+    "CLEAR_WHITE": "#F9F7FA",
+    "THOUGHTFUL_MIST": "#C8D2D1",
+    "REFLECTIVE_GRAY": "#A9A9A9"
+}
+
+# Light Mode Primary Colors
+LIGHT_MODE_PRIMARY_COLORS = {
+    "BALANCED_BLUE": "#37745B",
+    "CREATIVE_ORANGE": "#DA6A00",
+    "INSIGHT_SKY": "#30A2DA",
+    "HARMONY_ORANGE": "#FC4F30",
+    "VITAL_GREEN": "#6D904F",
+    "OPTIMISTIC_GOLD": "#EE9B01",
+    "SOPHISTICATED_SLATE": "#6A7793",
+    "RELIABLE_GREEN": "#14471E",
+    "ELEGANT_GRAY": "#CFD1E0",
+    "ENERGETIC_GOLD": "#E5AE38"
+}
+
+# Light Mode Secondary Colors
+LIGHT_MODE_SECONDARY_COLORS = {
+    "APPROACHABLE_BEIGE": "#EDC5AB",
+    "PEACEFUL_MAUVE": "#D0C9D0",
+    "NURTURING_ROSE": "#B4A8AA",
+    "GROWTH_MOSS": "#68904D",
+    "DEPENDABLE_STEEL": "#8B8B8B",
+    "INNOVATIVE_TEAL": "#217074",
+    "SOFT_GRAY": "#E7EAEF",
+    "THOUGHTFUL_MIST": "#C8D2D1",
+    "REFLECTIVE_GRAY": "#A9A9A9",
+    "CLEAR_WHITE": "#F9F7FA"
+}
+
+HOME_DIR = pathlib.Path.home()
+PROJECT_DIR = HOME_DIR / ".vnstock"
+ID_DIR = PROJECT_DIR / 'id'
